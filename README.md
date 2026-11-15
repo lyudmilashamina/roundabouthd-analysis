@@ -51,13 +51,6 @@ Annotated frame time is also different from travel time: a vehicle can disappear
 
 `analysis.ipynb` is my earlier working notebook. Use `final_analysis.ipynb` for the final results.
 
-## Run the notebook in Google Colab
-
-[Open the final notebook in Colab](https://colab.research.google.com/github/lyudmilashamina/roundabouthd-analysis/blob/main/final_analysis.ipynb), then select **Runtime → Run all**. If the repository is private, sign in and allow Colab to access it.
-
-The notebook loads only the annotation files it needs. It does not download the full 8 GB dataset or videos. Everything runs in the cloud; no dataset download to my computer is needed. If the full archive is already in the Colab session, the notebook can reuse it.
-
-Generated files are saved under `/content/analysis_results/final`. Colab storage is temporary, so save the notebook back to GitHub if you want to keep new notebook outputs. The results already included in this repository can be read without rerunning the analysis.
 
 ## Sources
 
