@@ -1,49 +1,67 @@
-# RoundaboutHD analysis
+# RoundaboutHD: exploring vehicle annotations
 
-A reproducible analysis of **annotation coverage**, camera observations, and data quality. The final materials are in English and designed for a short student presentation.
+I used this project to explore how vehicles are recorded by four cameras at different roundabouts. I wanted to understand what the data contains, compare the cameras, and check whether the annotations are suitable for further analysis.
 
-## Start here
+The project uses the existing RoundaboutHD annotations. I did not train a new machine-learning model.
 
-- **[Final notebook](final_analysis.ipynb)** — clean execution order, source loading, validation, three figures, and an exploratory Friedman test.
-- **[Short report](reports/final_report.md)** — the main findings and limitations.
-- **[Presentation notes](reports/presentation.md)** — a one-minute script and five Q&A answers.
-- **[Verification and corrections](reports/verification.md)** — what was checked and what remains unresolved.
-- **[Results](results/)** and **[figures](figures/)** — generated tables and exportable SVG charts.
+## My questions
 
-`analysis.ipynb` is the original exploratory notebook. It is preserved for history and contains superseded narrative claims and redundant cells. Use `final_analysis.ipynb` for the final analysis and presentation.
+- How many annotated vehicles appear in each camera, and how does the number change over time?
+- Are there missing observations or conflicting records?
+- For vehicles seen by all four cameras, does annotated observation time differ between cameras?
 
-## Run entirely in the cloud
+## What I did
 
-In Google Colab, choose **File → Open notebook → GitHub**, select this repository and the branch containing the final notebook, and open `final_analysis.ipynb`. A private repository requires authorization in Colab. Run all cells in order.
+I used Python, pandas, NumPy, Matplotlib, and SciPy to inspect the files, check repeated records, summarize observations, and create three charts. I also compared the single-camera and multi-camera annotations for selected vehicles that appeared without boxes in the contact sheets.
 
-The notebook retrieves selected annotations from the University of Bath ZIP using verified HTTP byte ranges. **It does not download the complete 8 GB archive or any videos.** If `/content/RoundaboutHD.zip` already exists, it reuses that archive. If range requests are unsupported, it stops rather than silently downloading the full dataset. Nothing is automatically downloaded to your computer or mounted from Drive.
+For the statistical comparison, I selected the same 74 vehicle IDs in all four cameras and applied a Friedman test. I measured annotated frame time by dividing the number of distinct annotated frames by 15 frames per second.
 
-On Colab, inputs are cached in `/content/roundabouthd_annotations` and outputs are saved in `/content/analysis_results/final`. These locations are temporary runtime storage. Save the notebook back to GitHub to preserve updated notebook outputs; generated standalone files require separate persistence if changed.
+## What I found
 
-The standard analysis libraries are normally available in Colab. If imports fail, install `requirements.txt` in the runtime. Outside Colab, use a Python environment with `pip install -r requirements.txt`; the notebook uses `data/raw/` as its annotation cache and writes output folders in the working directory. A restart-and-run-all validation also needs `nbclient` and `ipykernel`.
+The multi-camera file contains **311 unique vehicle IDs** and **177,782 rows**. These are the IDs included in this file, not a confirmed count of every vehicle passing through the area.
 
-## What is being measured?
+| Camera | Unique annotated IDs | Average annotated IDs per frame |
+| --- | ---: | ---: |
+| 1 | 179 | 3.98 |
+| 2 | 222 | 5.54 |
+| 3 | 243 | 5.85 |
+| 4 | 189 | 4.38 |
 
-- One MC row is an annotation, not a distinct vehicle or video frame.
-- The analyzed MC file has 311 global IDs. They are not a verified census of all road traffic.
-- SCT IDs are local to each camera and may represent fragmented tracks. Their sum is not a global vehicle count.
-- Annotated frame time is the number of unique annotated frames divided by 15 FPS. It differs from elapsed first-to-last observation span and travel time.
-- Counts include only the analyzed annotations. The reason camera 3 has the most included IDs remains unresolved.
-- The Friedman test uses the same 74 global IDs in all four cameras. It is exploratory; dependence between vehicles and matched-subset selection limit generalization.
+Camera 3 has the highest annotated count. I could not establish whether this comes from traffic patterns, camera coverage, or which vehicles were included in the annotations.
 
-## Quality and scope findings
+I found **26 conflicting observation keys**: the same vehicle ID has different boxes in the same camera and frame. For time and count calculations, I counted each key once and kept the original records for inspection.
 
-The notebook keeps raw records, exports the conflicting rows, and uses unique camera–vehicle–frame keys for counts. It distinguishes raw rows from unique observations in both SCT and MC. Missing input files cause explicit errors rather than silently becoming zeros.
+The Friedman test found differences between cameras (**p ≈ 0.000033**), with a relatively small effect size (**Kendall's W ≈ 0.106**). This is an exploratory result: the selected vehicles may not represent all traffic, and observations of different vehicles may be related.
 
-The four targeted missing-box examples are found in SCT and detection GT but do not have matching MC boxes at the audit threshold. This does not prove why they were excluded. The audit threshold is a geometric comparison rule, not a threshold used by the authors' association pipeline. No detector precision or recall is claimed.
+![Unique annotated IDs per camera](figures/unique_annotated_ids.svg)
 
-The archive workbook has four camera-specific sheets. Source filenames differ from examples in the README: the archive uses `Multi_CAM_Ground_Turth.txt` and `imagesc00x/SCT/SCT_GT.txt`. The notebook handles these names and records exact paths and SHA-256 hashes in `results/source_manifest.json`.
+## What the results do not tell me
+
+Some visible vehicles have records in single-camera annotations but no matching boxes in the multi-camera file. This does not automatically mean the dataset is badly annotated. The sources include different records, and the reason for each exclusion is still unclear.
+
+Annotated frame time is also different from travel time: a vehicle can disappear from the records and reappear later. I therefore did not use it to calculate vehicle speed. The difference between the 311 IDs in this file and the published overall count of 512 remains unresolved.
+
+## Files to open
+
+- [Final analysis notebook](final_analysis.ipynb) — the complete analysis with saved outputs.
+- [Short report](reports/final_report.md) — the findings and limitations.
+- [Presentation notes](reports/presentation.md) — a one-minute explanation and five questions with answers.
+- [Checks and corrections](reports/verification.md) — details behind the data-quality findings.
+- [Results](results/) and [figures](figures/) — the exported tables and charts.
+
+`analysis.ipynb` is my earlier working notebook. Use `final_analysis.ipynb` for the final results.
+
+## Run the notebook in Google Colab
+
+[Open the final notebook in Colab](https://colab.research.google.com/github/lyudmilashamina/roundabouthd-analysis/blob/main/final_analysis.ipynb), then select **Runtime → Run all**. If the repository is private, sign in and allow Colab to access it.
+
+The notebook loads only the annotation files it needs. It does not download the full 8 GB dataset or videos. Everything runs in the cloud; no dataset download to my computer is needed. If the full archive is already in the Colab session, the notebook can reuse it.
+
+Generated files are saved under `/content/analysis_results/final`. Colab storage is temporary, so save the notebook back to GitHub if you want to keep new notebook outputs. The results already included in this repository can be read without rerunning the analysis.
 
 ## Sources
 
-- [University of Bath dataset, DOI 10.15125/BATH-01574](https://researchdata.bath.ac.uk/1574/)
-- [Author repository](https://github.com/siri-rouser/RoundaboutHD)
-- [Paper, version 2](https://arxiv.org/html/2507.08729v2)
-- [Published association-file creation script](https://github.com/siri-rouser/multi_camera_tracking_labelling_tool/blob/main/MCVT_data_creation.py)
-
-Source videos and full annotation files are excluded from Git. The repository contains the notebook, small derived tables, report, and figures.
+- [RoundaboutHD dataset — University of Bath](https://researchdata.bath.ac.uk/1574/)
+- [Authors' GitHub repository](https://github.com/siri-rouser/RoundaboutHD)
+- [RoundaboutHD paper](https://arxiv.org/html/2507.08729v2)
+- [Authors' multi-camera annotation script](https://github.com/siri-rouser/multi_camera_tracking_labelling_tool/blob/main/MCVT_data_creation.py)
