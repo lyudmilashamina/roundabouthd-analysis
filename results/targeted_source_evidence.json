@@ -1,0 +1,669 @@
+[
+  {
+    "camera_id": 1,
+    "frame": 1,
+    "target": "Foreground dark sedan",
+    "sct_source": "RoundaboutHD/imagesc001/SCT/SCT_GT.txt",
+    "detection_source": "RoundaboutHD/imagesc001/detection/labels_GT.zip :: img000000.txt",
+    "mc_source": "Multi_CAM_Ground_Turth.txt",
+    "sct_target_record": [
+      {
+        "frame": 1,
+        "local_id": 1,
+        "xmin": 299.0,
+        "ymin": 1118.0,
+        "xmax": 887.0,
+        "ymax": 1562.0,
+        "class_id": 2
+      }
+    ],
+    "detection_frame_records": [
+      {
+        "class_id": 2,
+        "xmin": 299,
+        "ymin": 1118,
+        "xmax": 887,
+        "ymax": 1562,
+        "score": 0.95
+      },
+      {
+        "class_id": 2,
+        "xmin": 3646,
+        "ymin": 841,
+        "xmax": 3839,
+        "ymax": 996,
+        "score": 0.93
+      },
+      {
+        "class_id": 2,
+        "xmin": 3456,
+        "ymin": 638,
+        "xmax": 3772,
+        "ymax": 774,
+        "score": 0.89
+      },
+      {
+        "class_id": 2,
+        "xmin": 3557,
+        "ymin": 752,
+        "xmax": 3840,
+        "ymax": 880,
+        "score": 0.89
+      },
+      {
+        "class_id": 2,
+        "xmin": 1131,
+        "ymin": 247,
+        "xmax": 1297,
+        "ymax": 321,
+        "score": 0.86
+      },
+      {
+        "class_id": 2,
+        "xmin": 3753,
+        "ymin": 946,
+        "xmax": 3839,
+        "ymax": 1082,
+        "score": 0.83
+      },
+      {
+        "class_id": 2,
+        "xmin": 3549,
+        "ymin": 529,
+        "xmax": 3746,
+        "ymax": 685,
+        "score": 0.76
+      },
+      {
+        "class_id": 2,
+        "xmin": 128,
+        "ymin": 319,
+        "xmax": 171,
+        "ymax": 349,
+        "score": 0.67
+      },
+      {
+        "class_id": 7,
+        "xmin": 1318,
+        "ymin": 124,
+        "xmax": 1439,
+        "ymax": 171,
+        "score": 0.67
+      },
+      {
+        "class_id": 2,
+        "xmin": 3806,
+        "ymin": 596,
+        "xmax": 3839,
+        "ymax": 696,
+        "score": 0.66
+      },
+      {
+        "class_id": 7,
+        "xmin": 2489,
+        "ymin": 72,
+        "xmax": 2536,
+        "ymax": 143,
+        "score": 0.66
+      },
+      {
+        "class_id": 2,
+        "xmin": 1,
+        "ymin": 357,
+        "xmax": 49,
+        "ymax": 396,
+        "score": 0.41
+      }
+    ],
+    "mc_frame_records": []
+  },
+  {
+    "camera_id": 1,
+    "frame": 1,
+    "target": "Far-side white car",
+    "sct_source": "RoundaboutHD/imagesc001/SCT/SCT_GT.txt",
+    "detection_source": "RoundaboutHD/imagesc001/detection/labels_GT.zip :: img000000.txt",
+    "mc_source": "Multi_CAM_Ground_Turth.txt",
+    "sct_target_record": [
+      {
+        "frame": 1,
+        "local_id": 5,
+        "xmin": 1131.0,
+        "ymin": 247.0,
+        "xmax": 1297.0,
+        "ymax": 321.0,
+        "class_id": 2
+      }
+    ],
+    "detection_frame_records": [
+      {
+        "class_id": 2,
+        "xmin": 299,
+        "ymin": 1118,
+        "xmax": 887,
+        "ymax": 1562,
+        "score": 0.95
+      },
+      {
+        "class_id": 2,
+        "xmin": 3646,
+        "ymin": 841,
+        "xmax": 3839,
+        "ymax": 996,
+        "score": 0.93
+      },
+      {
+        "class_id": 2,
+        "xmin": 3456,
+        "ymin": 638,
+        "xmax": 3772,
+        "ymax": 774,
+        "score": 0.89
+      },
+      {
+        "class_id": 2,
+        "xmin": 3557,
+        "ymin": 752,
+        "xmax": 3840,
+        "ymax": 880,
+        "score": 0.89
+      },
+      {
+        "class_id": 2,
+        "xmin": 1131,
+        "ymin": 247,
+        "xmax": 1297,
+        "ymax": 321,
+        "score": 0.86
+      },
+      {
+        "class_id": 2,
+        "xmin": 3753,
+        "ymin": 946,
+        "xmax": 3839,
+        "ymax": 1082,
+        "score": 0.83
+      },
+      {
+        "class_id": 2,
+        "xmin": 3549,
+        "ymin": 529,
+        "xmax": 3746,
+        "ymax": 685,
+        "score": 0.76
+      },
+      {
+        "class_id": 2,
+        "xmin": 128,
+        "ymin": 319,
+        "xmax": 171,
+        "ymax": 349,
+        "score": 0.67
+      },
+      {
+        "class_id": 7,
+        "xmin": 1318,
+        "ymin": 124,
+        "xmax": 1439,
+        "ymax": 171,
+        "score": 0.67
+      },
+      {
+        "class_id": 2,
+        "xmin": 3806,
+        "ymin": 596,
+        "xmax": 3839,
+        "ymax": 696,
+        "score": 0.66
+      },
+      {
+        "class_id": 7,
+        "xmin": 2489,
+        "ymin": 72,
+        "xmax": 2536,
+        "ymax": 143,
+        "score": 0.66
+      },
+      {
+        "class_id": 2,
+        "xmin": 1,
+        "ymin": 357,
+        "xmax": 49,
+        "ymax": 396,
+        "score": 0.41
+      }
+    ],
+    "mc_frame_records": []
+  },
+  {
+    "camera_id": 2,
+    "frame": 1,
+    "target": "Foreground white van",
+    "sct_source": "RoundaboutHD/imagesc002/SCT/SCT_GT.txt",
+    "detection_source": "RoundaboutHD/imagesc002/detection/labels_GT.zip :: img000000.txt",
+    "mc_source": "Multi_CAM_Ground_Turth.txt",
+    "sct_target_record": [
+      {
+        "frame": 1,
+        "local_id": 4,
+        "xmin": 1878.0,
+        "ymin": 941.0,
+        "xmax": 2477.0,
+        "ymax": 1375.0,
+        "class_id": 2
+      }
+    ],
+    "detection_frame_records": [
+      {
+        "class_id": 7,
+        "xmin": 2286,
+        "ymin": 723,
+        "xmax": 2652,
+        "ymax": 939,
+        "score": 0.93
+      },
+      {
+        "class_id": 7,
+        "xmin": 695,
+        "ymin": 482,
+        "xmax": 1002,
+        "ymax": 684,
+        "score": 0.9
+      },
+      {
+        "class_id": 7,
+        "xmin": 2631,
+        "ymin": 499,
+        "xmax": 2748,
+        "ymax": 571,
+        "score": 0.7
+      },
+      {
+        "class_id": 7,
+        "xmin": 1878,
+        "ymin": 941,
+        "xmax": 2477,
+        "ymax": 1375,
+        "score": 0.68
+      },
+      {
+        "class_id": 2,
+        "xmin": 3309,
+        "ymin": 586,
+        "xmax": 3427,
+        "ymax": 640,
+        "score": 0.66
+      },
+      {
+        "class_id": 2,
+        "xmin": 3395,
+        "ymin": 629,
+        "xmax": 3514,
+        "ymax": 680,
+        "score": 0.66
+      },
+      {
+        "class_id": 2,
+        "xmin": 3534,
+        "ymin": 580,
+        "xmax": 3621,
+        "ymax": 626,
+        "score": 0.65
+      },
+      {
+        "class_id": 7,
+        "xmin": 2392,
+        "ymin": 352,
+        "xmax": 2436,
+        "ymax": 410,
+        "score": 0.65
+      },
+      {
+        "class_id": 2,
+        "xmin": 3153,
+        "ymin": 584,
+        "xmax": 3259,
+        "ymax": 653,
+        "score": 0.64
+      },
+      {
+        "class_id": 2,
+        "xmin": 3089,
+        "ymin": 563,
+        "xmax": 3200,
+        "ymax": 613,
+        "score": 0.59
+      },
+      {
+        "class_id": 2,
+        "xmin": 2995,
+        "ymin": 533,
+        "xmax": 3082,
+        "ymax": 579,
+        "score": 0.54
+      },
+      {
+        "class_id": 2,
+        "xmin": 3461,
+        "ymin": 655,
+        "xmax": 3662,
+        "ymax": 734,
+        "score": 0.5
+      },
+      {
+        "class_id": 2,
+        "xmin": 3038,
+        "ymin": 544,
+        "xmax": 3132,
+        "ymax": 595,
+        "score": 0.49
+      },
+      {
+        "class_id": 7,
+        "xmin": 1086,
+        "ymin": 447,
+        "xmax": 1195,
+        "ymax": 497,
+        "score": 0.49
+      },
+      {
+        "class_id": 2,
+        "xmin": 2932,
+        "ymin": 509,
+        "xmax": 3046,
+        "ymax": 566,
+        "score": 0.4
+      },
+      {
+        "class_id": 2,
+        "xmin": 3464,
+        "ymin": 541,
+        "xmax": 3537,
+        "ymax": 580,
+        "score": 0.4
+      },
+      {
+        "class_id": 2,
+        "xmin": 3228,
+        "ymin": 543,
+        "xmax": 3314,
+        "ymax": 591,
+        "score": 0.38
+      },
+      {
+        "class_id": 2,
+        "xmin": 3680,
+        "ymin": 613,
+        "xmax": 3774,
+        "ymax": 659,
+        "score": 0.36
+      },
+      {
+        "class_id": 2,
+        "xmin": 3264,
+        "ymin": 561,
+        "xmax": 3375,
+        "ymax": 609,
+        "score": 0.36
+      },
+      {
+        "class_id": 2,
+        "xmin": 1997,
+        "ymin": 321,
+        "xmax": 2042,
+        "ymax": 345,
+        "score": 0.35
+      }
+    ],
+    "mc_frame_records": [
+      {
+        "camera_id": 2,
+        "vehicle_id": 431,
+        "frame": 1,
+        "x": 2392.0,
+        "y": 352.0,
+        "width": 44.0,
+        "height": 58.0,
+        "xworld": -1,
+        "yworld": -1
+      },
+      {
+        "camera_id": 2,
+        "vehicle_id": 432,
+        "frame": 1,
+        "x": 2631.0,
+        "y": 499.0,
+        "width": 117.0,
+        "height": 72.0,
+        "xworld": -1,
+        "yworld": -1
+      },
+      {
+        "camera_id": 2,
+        "vehicle_id": 433,
+        "frame": 1,
+        "x": 2286.0,
+        "y": 723.0,
+        "width": 366.0,
+        "height": 216.0,
+        "xworld": -1,
+        "yworld": -1
+      },
+      {
+        "camera_id": 2,
+        "vehicle_id": 83,
+        "frame": 1,
+        "x": 695.0,
+        "y": 482.0,
+        "width": 307.0,
+        "height": 202.0,
+        "xworld": -1,
+        "yworld": -1
+      }
+    ]
+  },
+  {
+    "camera_id": 4,
+    "frame": 4500,
+    "target": "Red car",
+    "sct_source": "RoundaboutHD/imagesc004/SCT/SCT_GT.txt",
+    "detection_source": "RoundaboutHD/imagesc004/detection/labels_GT.zip :: img004499.txt",
+    "mc_source": "Multi_CAM_Ground_Turth.txt",
+    "sct_target_record": [
+      {
+        "frame": 4500,
+        "local_id": 174,
+        "xmin": 2570.84,
+        "ymin": 869.99,
+        "xmax": 2875.28,
+        "ymax": 1014.78,
+        "class_id": 2
+      }
+    ],
+    "detection_frame_records": [
+      {
+        "class_id": 2,
+        "xmin": 1817,
+        "ymin": 1229,
+        "xmax": 2344,
+        "ymax": 1585,
+        "score": 0.952787
+      },
+      {
+        "class_id": 2,
+        "xmin": 2572,
+        "ymin": 868,
+        "xmax": 2873,
+        "ymax": 1013,
+        "score": 0.929301
+      },
+      {
+        "class_id": 2,
+        "xmin": 711,
+        "ymin": 613,
+        "xmax": 877,
+        "ymax": 726,
+        "score": 0.877959
+      },
+      {
+        "class_id": 2,
+        "xmin": 1676,
+        "ymin": 523,
+        "xmax": 1810,
+        "ymax": 580,
+        "score": 0.804489
+      },
+      {
+        "class_id": 2,
+        "xmin": 2360,
+        "ymin": 492,
+        "xmax": 2408,
+        "ymax": 536,
+        "score": 0.787053
+      },
+      {
+        "class_id": 2,
+        "xmin": 2103,
+        "ymin": 480,
+        "xmax": 2152,
+        "ymax": 528,
+        "score": 0.779802
+      },
+      {
+        "class_id": 7,
+        "xmin": 1314,
+        "ymin": 496,
+        "xmax": 1449,
+        "ymax": 544,
+        "score": 0.767238
+      },
+      {
+        "class_id": 2,
+        "xmin": 2415,
+        "ymin": 452,
+        "xmax": 2449,
+        "ymax": 481,
+        "score": 0.733215
+      },
+      {
+        "class_id": 2,
+        "xmin": 1628,
+        "ymin": 454,
+        "xmax": 1704,
+        "ymax": 484,
+        "score": 0.692771
+      },
+      {
+        "class_id": 2,
+        "xmin": 961,
+        "ymin": 592,
+        "xmax": 1119,
+        "ymax": 693,
+        "score": 0.669809
+      },
+      {
+        "class_id": 7,
+        "xmin": 828,
+        "ymin": 527,
+        "xmax": 918,
+        "ymax": 576,
+        "score": 0.468752
+      },
+      {
+        "class_id": 2,
+        "xmin": 2414,
+        "ymin": 421,
+        "xmax": 2446,
+        "ymax": 448,
+        "score": 0.459463
+      },
+      {
+        "class_id": 7,
+        "xmin": 2368,
+        "ymin": 402,
+        "xmax": 2399,
+        "ymax": 444,
+        "score": 0.332363
+      }
+    ],
+    "mc_frame_records": [
+      {
+        "camera_id": 4,
+        "vehicle_id": 657,
+        "frame": 4500,
+        "x": 2414.85,
+        "y": 452.53,
+        "width": 34.01,
+        "height": 28.59,
+        "xworld": -1,
+        "yworld": -1
+      },
+      {
+        "camera_id": 4,
+        "vehicle_id": 199,
+        "frame": 4500,
+        "x": 2359.64,
+        "y": 492.52,
+        "width": 47.95,
+        "height": 44.05,
+        "xworld": -1,
+        "yworld": -1
+      },
+      {
+        "camera_id": 4,
+        "vehicle_id": 200,
+        "frame": 4500,
+        "x": 1813.14,
+        "y": 1227.56,
+        "width": 529.32,
+        "height": 360.36,
+        "xworld": -1,
+        "yworld": -1
+      },
+      {
+        "camera_id": 4,
+        "vehicle_id": 303,
+        "frame": 4500,
+        "x": 712.1,
+        "y": 611.36,
+        "width": 166.72,
+        "height": 113.21,
+        "xworld": -1,
+        "yworld": -1
+      },
+      {
+        "camera_id": 4,
+        "vehicle_id": 728,
+        "frame": 4500,
+        "x": 962.06,
+        "y": 591.12,
+        "width": 158.25,
+        "height": 100.72,
+        "xworld": -1,
+        "yworld": -1
+      },
+      {
+        "camera_id": 4,
+        "vehicle_id": 305,
+        "frame": 4500,
+        "x": 1679.11,
+        "y": 522.74,
+        "width": 154.6,
+        "height": 63.02,
+        "xworld": -1,
+        "yworld": -1
+      },
+      {
+        "camera_id": 4,
+        "vehicle_id": 729,
+        "frame": 4500,
+        "x": 2103.01,
+        "y": 479.75,
+        "width": 49.36,
+        "height": 47.73,
+        "xworld": -1,
+        "yworld": -1
+      }
+    ]
+  }
+]
