@@ -1,0 +1,5 @@
+camera_id,unique_annotated_ids,mean_annotated_ids_per_frame,peak_annotated_ids_per_frame
+1,179,3.979888888888889,10
+2,222,5.5424444444444445,14
+3,243,5.845666666666666,13
+4,189,4.382666666666666,12

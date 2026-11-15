@@ -1,0 +1,5 @@
+camera_id,frame,sct_local_id,target,sct_record_present,detection_gt_max_iou,mc_max_iou,detection_gt_match_at_0.5,mc_match_at_0.5
+1,1,1,Foreground dark sedan,True,1.0,0.0,True,False
+1,1,5,Far-side white car,True,1.0,0.0,True,False
+2,1,4,Foreground white van,True,1.0,0.0,True,False
+4,4500,174,Red car,True,0.9634536850825834,0.0,True,False

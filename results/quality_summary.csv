@@ -1,0 +1,11 @@
+metric,value
+rows,177782
+unique_global_ids,311
+unique_observations,177756
+extra_key_rows,26
+exact_duplicate_rows,0
+conflicting_keys,26
+rows_on_repeated_keys,52
+frame_min,1
+frame_max,9000
+world_coordinate_placeholder_rows,177782

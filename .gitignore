@@ -218,3 +218,11 @@ __marimo__/
 
 # Streamlit
 .streamlit/secrets.toml
+
+# RoundaboutHD source data and video caches (cloud runtime only)
+data/raw/
+RoundaboutHD/
+RoundaboutHD.zip
+*.mp4
+*.zip
+

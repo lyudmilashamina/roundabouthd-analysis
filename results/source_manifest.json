@@ -1,0 +1,73 @@
+{
+  "url": "https://researchdata.bath.ac.uk/1574/1/RoundaboutHD.zip",
+  "files": [
+    {
+      "member": "RoundaboutHD/Multi_CAM_Ground_Turth.txt",
+      "bytes": 7919701,
+      "compressed_bytes": 2642850,
+      "sha256": "bc6bb7926c84e700d53784bda9909a4764b7ba70e1cacdc440463540816017c7"
+    },
+    {
+      "member": "RoundaboutHD/imagesc001/SCT/SCT_GT.txt",
+      "bytes": 2487374,
+      "compressed_bytes": 951105,
+      "sha256": "4a714af41d1da888d937d1159f1ac6fc13a5f9857ddf23b6d92e0cd81571acd0"
+    },
+    {
+      "member": "RoundaboutHD/imagesc001/detection/labels_GT.zip",
+      "bytes": 3928655,
+      "compressed_bytes": 2319021,
+      "sha256": "b626aa1ce581d15b13088b366c06e117c8a3c64e03813537a062d4fc0fe7e1b1"
+    },
+    {
+      "member": "RoundaboutHD/imagesc002/SCT/SCT_GT.txt",
+      "bytes": 2210923,
+      "compressed_bytes": 858773,
+      "sha256": "7b1115621805862b0f1fe179b99a5ae4a88308f68621fcbaee8162f66fbe79b7"
+    },
+    {
+      "member": "RoundaboutHD/imagesc002/detection/labels_GT.zip",
+      "bytes": 3831373,
+      "compressed_bytes": 2262986,
+      "sha256": "5b31976fdd1ece5f5fdabb3900a7a608b5e424249d5e90f044ab53dfaac232db"
+    },
+    {
+      "member": "RoundaboutHD/imagesc003/SCT/SCT_GT.txt",
+      "bytes": 2395737,
+      "compressed_bytes": 936928,
+      "sha256": "1cf69cfb34a716e6824c19b6ecc61cb043fd84799bba3968a998bb0310e13c42"
+    },
+    {
+      "member": "RoundaboutHD/imagesc003/detection/labels_GT.zip",
+      "bytes": 4194103,
+      "compressed_bytes": 2664556,
+      "sha256": "ee68786a22feab058a3371da6302cc1d965bb09e23fd520311049064dcb310e7"
+    },
+    {
+      "member": "RoundaboutHD/imagesc004/SCT/SCT_GT.txt",
+      "bytes": 2301885,
+      "compressed_bytes": 878946,
+      "sha256": "f12f2ee36f09d966d3029346e79b9e02d54f35583672d458171f79c2e8ca2b72"
+    },
+    {
+      "member": "RoundaboutHD/imagesc004/detection/labels_GT.zip",
+      "bytes": 3330295,
+      "compressed_bytes": 1786718,
+      "sha256": "bb6c96545be1d965c011eeacfeafac617dfaac3d236fa87263341e7638cdf780"
+    },
+    {
+      "member": "RoundaboutHD/Vehicle_statistic.xlsx",
+      "bytes": 42108,
+      "compressed_bytes": 40903,
+      "sha256": "72065caba0466c2ae6a5c787294e7a9db5ce3adf62bd60618e5551be02bd6cf7"
+    },
+    {
+      "member": "RoundaboutHD/README.md",
+      "bytes": 2867,
+      "compressed_bytes": 1230,
+      "sha256": "f53a40ec3d3318d82c5354a74a3940ec89392aeb51272f18395e11e864b3f0f4"
+    }
+  ],
+  "archive_bytes": 8075314494,
+  "compressed_annotation_bytes": 15344016
+}
