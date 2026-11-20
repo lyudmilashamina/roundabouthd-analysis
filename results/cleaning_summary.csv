@@ -1,0 +1,13 @@
+metric,value
+input_rows,177782
+exact_duplicate_rows_removed,0
+distinct_annotation_rows_retained,177782
+conflicting_keys_retained_for_review,26
+annotation_rows_flagged_for_conflicts,52
+unique_observations_for_counting,177756
+extra_records_not_double_counted,26
+unique_vehicle_ids_retained,311
+world_coordinate_cells_set_to_missing,355564
+rows_with_negative_pixel_origin,0
+within_track_gap_events,13
+tracks_with_gaps,5

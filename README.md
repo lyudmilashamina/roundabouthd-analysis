@@ -14,6 +14,8 @@ The project uses the existing RoundaboutHD annotations. I did not train a new ma
 
 I used Python, pandas, NumPy, Matplotlib, and SciPy to inspect the files, check repeated records, summarize observations, and create three charts. I also compared the single-camera and multi-camera annotations for selected vehicles that appeared without boxes in the contact sheets.
 
+I added a separate preparation and cleaning step: I checked the format, marked missing world coordinates, flagged conflicting boxes, and created a table that counts each observation once. I kept the source files and observation gaps unchanged.
+
 For the statistical comparison, I selected the same 74 vehicle IDs in all four cameras and applied a Friedman test. I measured annotated frame time by dividing the number of distinct annotated frames by 15 frames per second.
 
 ## What I found
@@ -45,7 +47,8 @@ Annotated frame time is also different from travel time: a vehicle can disappear
 
 - [Final analysis notebook](final_analysis.ipynb) — the complete analysis with saved outputs.
 - [Short report](reports/final_report.md) — the findings and limitations.
-- [Presentation notes](reports/presentation.md) — a one-minute explanation and five questions with answers.
+- [What I did](reports/what_i_did.md) — the questions, methods, and findings.
+- [Data preparation and cleaning](reports/data_preparation_and_cleaning.md) — what I changed and what I kept for review.
 - [Checks and corrections](reports/verification.md) — details behind the data-quality findings.
 - [Results](results/) and [figures](figures/) — the exported tables and charts.
 
@@ -58,3 +61,4 @@ Annotated frame time is also different from travel time: a vehicle can disappear
 - [Authors' GitHub repository](https://github.com/siri-rouser/RoundaboutHD)
 - [RoundaboutHD paper](https://arxiv.org/html/2507.08729v2)
 - [Authors' multi-camera annotation script](https://github.com/siri-rouser/multi_camera_tracking_labelling_tool/blob/main/MCVT_data_creation.py)
+

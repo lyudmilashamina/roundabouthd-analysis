@@ -40,3 +40,11 @@ I also found conflicting records and gaps. Selected vehicles appeared in single-
 **Method:** I checked the available coordinates, timing information, and annotation coverage.
 
 **Finding:** Not directly. Speed requires verified distances and timing, while total traffic requires validated coverage. The world-coordinate columns contain placeholders, and annotated frame time is not journey duration.
+
+
+
+## Data preparation and cleaning
+
+I checked the data format and valid values, converted world-coordinate placeholders to missing values in a working copy, and flagged 26 conflicting observation keys. There were no completely identical rows to remove. For counts and timing, I used 177,756 unique camera–vehicle–frame observations instead of counting all 177,782 rows. All 311 vehicle IDs were retained. I kept gaps and conflicting boxes for review rather than filling or resolving them by guesswork.
+
+[Preparation and cleaning details](data_preparation_and_cleaning.md)

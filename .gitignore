@@ -226,3 +226,6 @@ RoundaboutHD.zip
 *.mp4
 *.zip
 
+
+# Generated preparation tables (cloud runtime only)
+data/processed/
